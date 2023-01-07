@@ -1,0 +1,262 @@
+@charset "UTF-8";     
+@import 'custom.css';
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+@font-face {
+   font-family: myFirstFont;
+  src: url("PassionsConflict-Regular.ttf");
+  font-weight: bold;
+}
+.font{
+	 font-family: myFirstFont;
+}
+.a {
+  width: 200px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: 30;
+}
+
+
+@keyframes example {
+  0%   {background-color:red; border-radius:0px;}
+  25%  {background-color:yellow; border-radius:20px;}
+  50%  {background-color:blue; border-radius:40px;}
+  75%  {background-color:green; border-radius:80px;}
+  100% {background-color:red; border-radius:50%;}
+}
+.section-1{
+	width:100%;
+	margin:3% 0;
+	background-color:white;
+}
+.tranform{
+  width:80%;
+  border:3px solid blue;
+  padding:40px;
+  margin:auto;
+  margin-top:10px;
+}
+.container-1{
+	width:90%;
+	margin:auto;
+}
+.image-2{
+	position:relative;
+}
+.image-2 {
+	background: url(img/about.jpg) center center no-repeat;
+    background-size: cover;
+    min-height: 600px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content-2{
+	width:80%;
+	display:flex;
+	flex-wrap:wrap;
+	margin:auto;
+	padding:5% 0;
+	border:3px solid blue;
+}
+.vibro{
+	width:70%;
+	margin:0 3%;
+	line-height:1.5;
+}
+.about h3{
+	font-size: 28px;
+    font-weight: 700;
+    color: #0f394c;
+    margin-bottom: 15px;
+}
+.vibro h3{
+	margin-bottom:8px;
+}
+.about p{
+	line-height:1.5;
+}
+
+.vibro h3:hover{
+	color:#00c4ffb3;
+}
+@media (min-width:320px) {
+	.para{
+		width:100%;
+	}
+	.creat{
+		width:100%;
+	}
+}
+@media (min-width:600px) {
+	
+	.para{
+		width:100%;
+	}
+	.creat{
+		width:100%;
+	}
+}
+@media (min-width:1025px) {
+	.para{
+		width:55%;
+	}
+	
+	.creat{
+		width:45%;
+	}
+}
+.important{
+	background-color:green ;
+}
+.important{
+	background-color:yellow !important;
+}
+.important{
+	background-color:red ;
+}
+.important{
+	background-color:orange ;
+}
+.important{
+	background-color:blue ;
+}
+/*.transition{
+  width:80%;
+  border:1px solid red;
+  margin:auto;
+  padding:20px;
+}
+.tranfroms{
+  width:80%;
+  border:3px solid blue;
+  padding:40px;
+  margin:auto;
+  margin-top:10px;
+  overflow: hidden;
+}
+#myDiv1 {
+  transform: matrix(1, -0.3, 0, 1, 0, 0);
+  width: 100px;
+  height: 100px;
+  background: rgb(108, 206, 28);
+  transition: width 2s linear;
+}
+.tranform{
+  width:80%;
+  border:3px solid blue;
+  padding:40px;
+  margin:auto;
+  margin-top:10px;
+}
+.items1 {
+  width: 100px;
+  height: 100px;
+  background: rgb(108, 206, 28);
+  transition: width 2s linear;
+  
+}
+
+.items1:hover {
+  width: 300px;
+  
+}
+
+.items2 {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition-property: width;
+  transition-duration: 5s;
+}
+.items2:hover {
+  width: 300px;
+}
+.items3 {
+  width: 100px;
+  height: 50px;
+  background: red;
+  color: white;
+  transition-property: width;
+  transition-duration: 5s;
+}
+.div1 {transition-timing-function: linear;  background: red; margin:10px 0;}
+.div2 {transition-timing-function: ease; margin:10px 0;}
+.div3 {transition-timing-function: ease-in; margin:10px 0;}
+.div4 {transition-timing-function: ease-out; margin:10px 0;}
+.div5 {transition-timing-function: ease-in-out;}
+
+.items3:hover {
+  width: 300px;
+}
+.items4 {
+  width: 100px;
+  height: 100px;
+  background: rgb(241, 218, 9);
+  transition-property: width;
+  transition-duration: 5s;
+  transition-delay: 4s;
+}
+.items4:hover {
+  width: 400px;
+}
+.a {
+  width: 150px;
+  height: 80px;
+  background-color: rgb(211, 139, 7);
+}
+.a-1{
+  width: 150px;
+  height: 80px;
+  background-color: rgb(211, 139, 7); 
+}
+.a:hover{
+  transform: translate(140px, 0);
+ }
+ .a-1:hover{
+  transform:translate3d(10px, 0, 0px);;;
+ }
+div.b {
+  width: 150px;
+  height: 80px;
+  background-color: rgb(226, 226, 147);
+}
+.b:hover{
+  transform: skewY(20deg);
+}
+.i .div6 {
+  width: 100px;
+  height: 100px;
+  background: red;
+  margin:2% 0;
+  transition: width 2s;
+  transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+}
+.div6:hover{
+  width:600px;
+  background:blue;
+} 
+div.c {
+  width: 150px;
+  height: 80px;
+  background-color: rgb(3, 134, 25);
+}
+.c:hover{
+  transform: scalex(1.5);
+}
+div.d {
+  width: 150px;
+  height: 80px;
+  background-color: yellow;
+  
+}
+.d:Hover{
+  transform: rotate(40deg);
+}*/
