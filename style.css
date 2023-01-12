@@ -11,7 +11,7 @@
   font-weight: bold;
 }
 .font{
-	 font-family: myFirstFont;
+	 font-family: myFir``stFont;
 }
 .a {
   width: 200px;
@@ -21,9 +21,8 @@
   animation-name: example;
   animation-duration: 4s;
   animation-iteration-count: 30;
+  /*animation-play-state: paused;*/
 }
-
-
 @keyframes example {
   0%   {background-color:red; border-radius:0px;}
   25%  {background-color:yellow; border-radius:20px;}
@@ -31,6 +30,20 @@
   75%  {background-color:green; border-radius:80px;}
   100% {background-color:red; border-radius:50%;}
 }
+/*div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation: mymove 3s;
+  animation-delay: 2s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes mymove {
+  from {top: 0px; background-color: yellow;}
+  to {top: 200px;}
+}*/
 .section-1{
 	width:100%;
 	margin:3% 0;
@@ -128,6 +141,54 @@
 .important{
 	background-color:blue ;
 }
+.a1 {
+  width: 200px;
+  height: 100px;
+  background-color: red;
+  visibility: visible;
+}
+.b {
+  width: 200px;
+  height: 100px;
+  background-color:  blue;
+  visibility: hidden;
+}
+.alias {cursor: alias;}
+.all-scroll {cursor: all-scroll;}
+.auto {cursor: auto;}
+.cell {cursor: cell;}
+.col-resize {cursor: col-resize;}
+.context-menu {cursor: context-menu;}
+.copy {cursor: copy;}
+.crosshair {cursor: crosshair;}
+.default {cursor: default;}
+.e-resize {cursor: e-resize;}
+.ew-resize {cursor: ew-resize;}
+.grab {cursor: -webkit-grab; cursor: grab;}
+.grabbing {cursor: -webkit-grabbing; cursor: grabbing;}
+.help {cursor: help;}
+.move {cursor: move;}
+.n-resize {cursor: n-resize;}
+.ne-resize {cursor: ne-resize;}
+.nesw-resize {cursor: nesw-resize;}
+.ns-resize {cursor: ns-resize;}
+.nw-resize {cursor: nw-resize;}
+.nwse-resize {cursor: nwse-resize;}
+.no-drop {cursor: no-drop;}
+.none {cursor: none;}
+.not-allowed {cursor: not-allowed;}
+.pointer {cursor: pointer;}
+.progress {cursor: progress;}
+.row-resize {cursor: row-resize;}
+.s-resize {cursor: s-resize;}
+.se-resize {cursor: se-resize;}
+.sw-resize {cursor: sw-resize;}
+.text {cursor: text;}
+.url {cursor: url(myBall.cur),auto;}
+.w-resize {cursor: w-resize;}
+.wait {cursor: wait;}
+.zoom-in {cursor: zoom-in;}
+.zoom-out {cursor: zoom-out;}
 /*.transition{
   width:80%;
   border:1px solid red;
